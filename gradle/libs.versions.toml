@@ -1,0 +1,61 @@
+
+[versions]
+agp = "8.11.1"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.9.1"
+activityCompose = "1.10.1"
+composeBom = "2024.09.00"
+navigationCompose = "2.7.7"
+supabase = "2.2.3"
+ktorClientOkhttp = "2.3.7"
+androidxBrowser = "1.6.0"
+googleAuth = "20.7.0"
+composeCompiler = "1.6.10"
+
+[libraries]
+# Core AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# Lifecycle
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+# Compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Navigation
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# Supabase (GoTrue, PostgREST, core)
+supabase-kt = { group = "io.github.jan-tennert.supabase", name = "supabase-kt", version.ref = "supabase" }
+supabase-gotrue-kt = { group = "io.github.jan-tennert.supabase", name = "gotrue-kt", version.ref = "supabase" }
+supabase-postgrest-kt = { group = "io.github.jan-tennert.supabase", name = "postgrest-kt", version.ref = "supabase" }
+
+# OAuth Support
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktorClientOkhttp" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "androidxBrowser" }
+google-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "googleAuth" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+
+
